@@ -1,0 +1,66 @@
+.containerGameCard {
+    background: rgba(53, 53, 53, 0.692);
+    background-size: 50px 50px 50px;
+    box-shadow: 0 0 2px  rgb(0, 195, 255); 
+    flex-direction: 0%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.img {
+    height: 230px;
+    width: 230px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+
+.title {
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.genres {
+    display: grid;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.containerGameCard:hover {
+   transform: translateY(1rem);
+}
+
+.iconContainer {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.595);
+    
+}
+.icon {
+    display: flex;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 70px;
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.containerGameCard:hover {
+   background: rgba(43, 43, 43, 0.68);
+}
+
+
+
+
+

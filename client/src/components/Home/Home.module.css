@@ -1,0 +1,90 @@
+.orderList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 270px);
+  list-style: none;
+  margin-left: 40px;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.orderSelect {
+  display: flex;
+  margin-left: 42rem;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.btn {
+  float: left;
+  margin-left: 60px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(36, 36, 36, 36);
+  box-shadow: 0 0 4px  rgb(0, 195, 255); 
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-top: 50px;
+}
+
+.btnExit {
+  float: right;
+  background: rgb(36, 36, 36);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 0 4px  rgb(0, 195, 255); 
+  margin-top: 10px;
+  margin-right: 55px;
+}
+
+.btnExit:hover {
+  opacity: 0.6;
+}
+
+.boxContainer{
+  margin-top: -2rem;
+  background: rgb(41, 41, 41);
+}
+
+.MyInfoContainer {
+  display: -ms-grid;
+  background-color: black;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.loading {
+  font-size: 5rem;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.orderLoading {
+  margin-top: 10rem;
+  margin-left: 32rem;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+
