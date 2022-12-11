@@ -1,4 +1,10 @@
 import axios from 'axios';
+const { REACT_APP_SERVER_BACK } = process.env
+
+
+
+
+
 
 export const ALL_VIDEOS_GAME = 'ALL_VIDEOS_GAME';
 export const ALL_GENRES = 'ALL_GENRES';
@@ -14,19 +20,9 @@ export const CLEAN = 'CLEAN';
 
 
 
-
-
-
-
-
-
-
-
-
-
 export const allVideosgame =  () => {
     return  async (dispatch) => {
-        const res = await axios.get('http://localhost:3001/videogames');
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames`);
         const data = await res.data;
         return dispatch({
             type: ALL_VIDEOS_GAME,
@@ -37,7 +33,7 @@ export const allVideosgame =  () => {
 
 export const allGenres = () => {
     return async (dispatch) => {
-        const res = await axios.get('http://localhost:3001/genres');
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/genres`);
         const data = await res.data;
         return dispatch({
             type: ALL_GENRES,
@@ -49,7 +45,7 @@ export const allGenres = () => {
 
 export const gameDetails = (id) => {
     return async (dispatch) => {
-        const res = await axios.get(`http://localhost:3001/videogame/${id}`);
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogame/${id}`);
         const data = await res.data;     
 
         return dispatch({
@@ -64,7 +60,7 @@ export const createVideogame = (videogame) => {
     return async (dispatch) => {
       try {
         const { data } = await axios.post(
-          `http://localhost:3001/videogame`,
+          `${REACT_APP_SERVER_BACK}/videogame`,
           videogame
         );
         return dispatch({
@@ -79,7 +75,7 @@ export const createVideogame = (videogame) => {
 
 export const getName = (name) => {
     return async (dispatch) => {
-        const res = await axios.get(`http://localhost:3001/videogames?name=${name}`);        
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames?name=${name}`);        
         const data = await res.data
 
         return dispatch({
@@ -114,7 +110,7 @@ export const filterOrder = (payload) => {
 
 export const getPlatforms = () => {
     return async(dispatch) => {
-        const res = await axios.get('http://localhost:3001/platforms');
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/platforms`);
         const data = await res.data
         return dispatch({
             type: GET_PLATFORMS,
