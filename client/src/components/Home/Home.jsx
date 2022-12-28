@@ -53,8 +53,8 @@ function Home() {
 
     
     return (
-    <div>
-      <Link to = "/">
+      <div className={style.container}>
+      <Link className={style.containerBtn} to = "/">
       <button className={style.btnExit}>
         <MdExitToApp/>
         </button>
@@ -63,10 +63,8 @@ function Home() {
         <Search/>  
         </div>
         <div className={style.boxContainer}>
-        <Link to = '/creategame'>
-        <div>
+        <Link className={style.btnCreate} to = '/creategame'>  
         <button type = 'click' className={style.btn}>Create Game!</button>
-      </div>
       </Link>  
   
         <div className={style.orderSelect}>

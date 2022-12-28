@@ -4,6 +4,7 @@ import style from './LandingPage.module.css';
 
 function LandingPage() {
     return (
+       
         <div className={style.container}>
             <h1 className={style.title}>Video Games!</h1>
         <div className={style.btnContainer}>
@@ -12,7 +13,7 @@ function LandingPage() {
             <button className={style.btn}>Home</button>
             </Link>
         </div>
-        </div>
+    </div>
     )
 };
 

@@ -87,4 +87,31 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 768px){
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .containerBtn {
+    display: flex;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 38rem;
+  
+  }
+
+  .container .search {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+    width: 20px;
+  }
+
+  .container .boxContainer .btnCreate{
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
 
