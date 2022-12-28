@@ -49,11 +49,18 @@
 
 @media screen and (max-width: 768px) {
     .containerSearch .searchContainer .input {
-       
+     
+    }
+    .containerSearch .searchContainer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-left: 40px;
     }
 
-    .containerSearch .searchContainer .btnContainer {
-    
+    .containerSearch .searchContainer .btnContainer  {
+        margin-right: 30rem;
+        position: absolute;
     }
     
 }
