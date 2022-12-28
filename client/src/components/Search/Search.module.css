@@ -48,9 +48,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .containerSearch .searchContainer .input {
-     
-    }
+
     .containerSearch .searchContainer {
         display: flex;
         justify-content: center;
