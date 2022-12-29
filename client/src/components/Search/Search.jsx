@@ -38,9 +38,11 @@ const handleChange = (e) => {
             placeholder='Search game..'
            
             />
+            <div className={style.btnRes}>
             <button className={style.btnContainer} >
                 <VscSearch className={style.btn}/>
             </button>
+            </div>
             </form>
         </div>
         </div>

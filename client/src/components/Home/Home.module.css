@@ -98,6 +98,8 @@
     margin-top: 10px;
     position: absolute;
     margin-left: 38rem;
+    width: 100%;
+    height: auto;
   
   }
 
@@ -110,6 +112,8 @@
   .container .boxContainer .orderSelect {
     margin-left: 50px;
     margin-top: -5px;
+    width: 100%;
+    height: auto;
   }
 }
 

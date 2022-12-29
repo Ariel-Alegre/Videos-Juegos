@@ -56,8 +56,12 @@
         margin-left: 40px;
     }
 
-    .containerSearch .searchContainer .btnContainer  {
-        margin-right: 30rem;
+    .containerSearch .searchContainer .input {
+       width: 15rem;
+    }
+
+    .containerSearch .searchContainer .btnRes  {
+        margin-right: 130rem;
         position: absolute;
     }
     
