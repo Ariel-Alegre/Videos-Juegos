@@ -110,9 +110,8 @@
   }
 
   .container .boxContainer .orderSelect {
-    margin-left: 50px;
+    margin-left: 1rem;
     margin-top: -5px;
-    width: 100%;
     height: auto;
   }
 }

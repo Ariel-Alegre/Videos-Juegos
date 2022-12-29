@@ -12,6 +12,10 @@
 
 .option {
     background: rgb(36, 36, 36);
+}
 
-
+@media screen and (max-width: 768px) {
+    .select {
+        width: 70px;
+    }
 }

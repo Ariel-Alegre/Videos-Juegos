@@ -18,7 +18,7 @@ function FilterOrder() {
 
     return (<div>
         <select className = {style.select} onChange = {(e) => handleChange(e)}>
-        <option className = {style.option} value='all'>Filtrar por Origen</option>
+        <option className = {style.option} value='all'>Filter By Origin</option>
         <option className = {style.option} value="api">API</option>
         <option className = {style.option} value="created">Created</option>
     </select>
