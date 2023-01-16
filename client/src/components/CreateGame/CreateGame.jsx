@@ -14,7 +14,7 @@ const  validate = (input) => {
   let errors = {};
 
   if(!input.name) {
-    errors.name = 'El nombre es requerido'
+    errors.name = 'The name is required'
   } 
 
   if(input.image.length !== 0 && !/^(https?|chrome):\/\/[^\s$.?#].[^\s]*$/.test(input.image)){
@@ -22,25 +22,25 @@ const  validate = (input) => {
   }
 
   if(!input.description) {
-    errors.description = 'La descripcion es requerida'
+    errors.description = 'The description is required'
   } else if (input.description.length > 100) {
-    errors.description = 'La descripcion es muy larga. (Max = 100 caracteres)'
+    errors.description = 'The description is very long. (Max = 100 characters)'
   }
 
   if(!input.released) {
-    errors.released = 'La fecha de lanzamiento es requerida'
+    errors.released = 'Release date is required'
   }
 
   if(!input.rating) {
-    errors.rating = 'El rating es requerido'
+    errors.rating = 'The rating is required'
   } else if(input.rating > 5) {
-    errors.rating = 'El rating no debe ser mayor a 5'
+    errors.rating = 'The rating should not be higher than 5'
   } else if(input.rating < 0) {
-    errors.rating = 'El rating no puede ser un numero negativo'
+    errors.rating = 'The rating cannot be a negative number'
   }
 
   return errors 
-}
+};
 
  function CreateGame() {
   const [input, setInput] = useState({
