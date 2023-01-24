@@ -10,7 +10,7 @@ module.exports = (sequelize) => {
       unique: true,
       primaryKey: true,
       allowNull: false //allowNull(permite un vacio) --> FALSO
-   }, 
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,13 +28,13 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     platforms: {
-      type:DataTypes.ARRAY(DataTypes.STRING),
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
-     
+
     },
     image: {
       type: DataTypes.STRING,
       allowNull: true
     }
-  },  {timestamps: false});
+  }, { timestamps: false });
 };

@@ -1,11 +1,6 @@
 import axios from 'axios';
 const { REACT_APP_SERVER_BACK } = process.env
 
-
-
-
-
-
 export const ALL_VIDEOS_GAME = 'ALL_VIDEOS_GAME';
 export const ALL_GENRES = 'ALL_GENRES';
 export const GAME_DETAILS = 'GAME_DETAILS';
@@ -20,15 +15,16 @@ export const CLEAN = 'CLEAN';
 
 
 
-export const allVideosgame =  () => {
-    return  async (dispatch) => {
+export const allVideosgame = () => {
+    return async (dispatch) => {
         const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames`);
         const data = await res.data;
         return dispatch({
             type: ALL_VIDEOS_GAME,
             payload: data
         })
-}};
+    }
+};
 
 
 export const allGenres = () => {
@@ -46,7 +42,7 @@ export const allGenres = () => {
 export const gameDetails = (id) => {
     return async (dispatch) => {
         const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogame/${id}`);
-        const data = await res.data;     
+        const data = await res.data;
 
         return dispatch({
             type: GAME_DETAILS,
@@ -58,24 +54,24 @@ export const gameDetails = (id) => {
 
 export const createVideogame = (videogame) => {
     return async (dispatch) => {
-      try {
-        const { data } = await axios.post(
-          `${REACT_APP_SERVER_BACK}/videogame`,
-          videogame
-        );
-        return dispatch({
-          type: CREATE_VIDEOGAME,
-          payload: data,
-        });
-      } catch (err) {
-        console.error(err);
-      }
+        try {
+            const { data } = await axios.post(
+                `${REACT_APP_SERVER_BACK}/videogame`,
+                videogame
+            );
+            return dispatch({
+                type: CREATE_VIDEOGAME,
+                payload: data,
+            });
+        } catch (err) {
+            console.error(err);
+        }
     };
-  };
+};
 
 export const getName = (name) => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames?name=${name}`);        
+        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames?name=${name}`);
         const data = await res.data
 
         return dispatch({
@@ -87,7 +83,7 @@ export const getName = (name) => {
 
 
 export const sort = (payload) => {
-     return { 
+    return {
         type: SORT_BY,
         payload: payload
     }
@@ -109,7 +105,7 @@ export const filterOrder = (payload) => {
 
 
 export const getPlatforms = () => {
-    return async(dispatch) => {
+    return async (dispatch) => {
         const res = await axios.get(`${REACT_APP_SERVER_BACK}/platforms`);
         const data = await res.data
         return dispatch({
@@ -123,9 +119,9 @@ export const getPlatforms = () => {
 export const clean = () => {
     return {
         type: CLEAN,
-        payload:[]
+        payload: []
     }
-}
+};
 
 
 

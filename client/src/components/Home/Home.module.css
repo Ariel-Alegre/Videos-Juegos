@@ -18,13 +18,14 @@
   float: left;
   margin-left: 60px;
   font-size: 1.2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: rgba(36, 36, 36, 36);
-  box-shadow: 0 0 4px  rgb(0, 195, 255); 
+  box-shadow: 0 0 4px rgb(0, 195, 255);
   color: white;
   border: none;
   border-radius: 3px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
 }
 
@@ -40,7 +41,7 @@
   border-radius: 2px;
   cursor: pointer;
   font-size: 1.2rem;
-  box-shadow: 0 0 4px  rgb(0, 195, 255); 
+  box-shadow: 0 0 4px rgb(0, 195, 255);
   margin-top: 10px;
   margin-right: 55px;
 }
@@ -49,7 +50,7 @@
   opacity: 0.6;
 }
 
-.boxContainer{
+.boxContainer {
   margin-top: -2rem;
   background: rgb(41, 41, 41);
 }
@@ -87,7 +88,7 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -100,11 +101,9 @@
     margin-left: 38rem;
     width: 100%;
     height: auto;
-  
   }
 
-
-  .container .boxContainer .btnCreate{
+  .container .boxContainer .btnCreate {
     display: flex;
     margin-top: 50px;
   }
@@ -115,5 +114,3 @@
     height: auto;
   }
 }
-
-

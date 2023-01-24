@@ -1,19 +1,16 @@
-.boxContainer{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btn {
-    border: none;
-    cursor: pointer;
-    
+  border: none;
+  cursor: pointer;
 }
 
-.btn:focus , .btn:active {
-    background: rgb(39, 39, 39);
-    box-shadow: 0 0 4px  rgb(0, 195, 255); 
-
+.btn:focus,
+.btn:active {
+  background: rgb(39, 39, 39);
+  box-shadow: 0 0 4px rgb(0, 195, 255);
 }
-

@@ -1,100 +1,94 @@
 .detailsContainer {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 50px;
-    background: rgba(53, 53, 53, 0.692);
-
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  background: rgba(53, 53, 53, 0.692);
 }
 
-.img{
-    height: 230px;
-    width: auto;
-    border-radius: 10px;
+.img {
+  height: 230px;
+  width: auto;
+  border-radius: 10px;
 }
 
 .description {
-    display: grid;
-    gap: 40px;
-    margin-left: 50px;
-    margin-right: 10rem;
+  display: grid;
+  gap: 40px;
+  margin-left: 50px;
+  margin-right: 10rem;
 }
 
 .nameGame {
-    margin-left: 20px;
-    font-size: 2rem;
+  margin-left: 20px;
+  font-size: 2rem;
 }
 
-.released{
-    margin-top: -40px;
-    margin-left: 40px;
+.released {
+  margin-top: -40px;
+  margin-left: 40px;
 }
 
 .ratingContainer {
-    display: flex;
-    margin-left: 60px;
-    margin-top: -30px;
+  display: flex;
+  margin-left: 60px;
+  margin-top: -30px;
 }
 
 .rating {
-    margin-left: -65px;
-    padding: 10px;
+  margin-left: -65px;
+  padding: 10px;
 }
 
 .iconContainer {
-    margin-top: 2px;
-    margin-left: 2px;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 .icon {
-    color: orange;
-    font-size: 1.2rem;
+  color: orange;
+  font-size: 1.2rem;
 }
 
 .infoContainer {
-    display: flex;
-    gap: 20px;
-    margin-left: 40px;
-    margin-top: -40px;    
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+  margin-top: -40px;
 }
 
 .genres {
-    background: rgba(0, 0, 0, 0.249);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.382); 
-    border-radius: 2px;
-    border: none;
+  background: rgba(0, 0, 0, 0.249);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.382);
+  border-radius: 2px;
+  border: none;
 }
 
 .platforms {
-    background: rgba(0, 0, 0, 0.249);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.382); 
-    border-radius: 2px;
-    border: none;
+  background: rgba(0, 0, 0, 0.249);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.382);
+  border-radius: 2px;
+  border: none;
 }
 
 .btnContainer {
-    float: right;
-    margin-left: 20px;
-    margin-right: 40px;
+  float: right;
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
-.btn{
-    color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    background: rgb(36, 36, 36);
-    box-shadow: 0 0 4px  rgb(0, 195, 255);
-    }
-       
+.btn {
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: rgb(36, 36, 36);
+  box-shadow: 0 0 4px rgb(0, 195, 255);
+}
+
 .btn:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 body {
-    background: rgb(53, 53, 53);
-  
+  background: rgb(53, 53, 53);
 }
-
-
-  
-
