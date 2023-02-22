@@ -1,4 +1,4 @@
-import style from "./FilterOrder.module.css";
+ import style from "./FilterOrder.module.css";
 import { useDispatch } from "react-redux";
 import { filterOrder, allVideosgame } from "../../../redux/action";
 

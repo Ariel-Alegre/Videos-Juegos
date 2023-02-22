@@ -31,6 +31,8 @@ function Home() {
     setCurrentPage(pageNumber);
   };
 
+  console.log(allGames);
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
