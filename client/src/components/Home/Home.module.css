@@ -89,6 +89,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .container {
     display: flex;
     flex-direction: column;
@@ -134,5 +135,11 @@
   .orderList {
     margin-top: 50px;
     margin-left: -10px;
+  }
+  .orderLoading {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
   }
 }
