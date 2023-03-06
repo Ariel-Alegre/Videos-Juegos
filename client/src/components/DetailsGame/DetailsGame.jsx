@@ -33,7 +33,9 @@ function DetailGame() {
           <div className={style.nameGame}>
             <strong>{detail.name}</strong>
           </div>
-          <div className={style.released}>{detail.released}</div>
+          <div className={style.released}>
+            {detail.released}
+            </div>
           <div className={style.ratingContainer}>
             <strong> {detail.rating} </strong>
             <div className={style.iconContainer}>

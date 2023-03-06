@@ -89,6 +89,50 @@
   opacity: 0.6;
 }
 
-body {
-  background: rgb(53, 53, 53);
+@media screen and (max-width: 768px) {
+  .img {
+    width: 300px;
+    height: auto;
+    margin-left: -15px;
+    margin-top: 40px;
+  }
+
+  .btn {
+    margin-left: -300px;
+  }
+
+  .description {
+    margin-top: 13em;
+    margin-left: -270px;
+  }
+  .nameGame {
+    font-size: 20px;
+    margin-left: 40px;
+    width: 200px;
+  }
+  .released {
+    margin-left: 75px;
+  }
+  .ratingContainer {
+    margin-left: 90px;
+    margin-top: -50px;
+  }
+  .genres {
+    margin-left: -5px;
+    width: 200px;
+  }
+
+  .infoContainer {
+    display: grid;
+  }
+  .platforms{
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+  .descriptionContainer{
+   position: absolute;
+    width: 200px;
+    margin-top: -180px;
+    margin-left: 280px;
+  }
 }
