@@ -98,7 +98,7 @@
   }
 
   .btn {
-    margin-left: -300px;
+    margin-left: -320px;
   }
 
   .description {
@@ -133,6 +133,6 @@
    position: absolute;
     width: 200px;
     margin-top: -180px;
-    margin-left: 280px;
+    margin-left: 300px;
   }
 }
