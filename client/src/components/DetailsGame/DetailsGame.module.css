@@ -98,7 +98,7 @@
   }
 
   .btn {
-    margin-left: -320px;
+    margin-left: -350px;
   }
 
   .description {
@@ -109,6 +109,7 @@
     font-size: 20px;
     margin-left: 40px;
     width: 200px;
+    margin-top: 10px;
   }
   .released {
     margin-left: 75px;
