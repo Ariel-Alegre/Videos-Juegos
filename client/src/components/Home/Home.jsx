@@ -22,7 +22,7 @@ function Home() {
   }, [dispatch]);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const gamesPerpage = 8;
+  const gamesPerpage = 6;
   const indexOflastGame = currentPage * gamesPerpage;
   const indexOfirstGame = indexOflastGame - gamesPerpage;
   const currentGames = allGames.slice(indexOfirstGame, indexOflastGame);
@@ -31,7 +31,6 @@ function Home() {
     setCurrentPage(pageNumber);
   };
 
-  console.log(allGames);
 
   const [loading, setLoading] = useState(false);
 
@@ -51,12 +50,12 @@ function Home() {
         <button className={style.btnExit}>
           <MdExitToApp />
         </button>
-      </Link>
       <div className={style.navBar}>
         <div className={style.search}>
           <Search />
         </div>
       </div>
+      </Link>
         <div className={style.boxContainer}>
           <Link className={style.btnCreate} to="/creategame">
             <button type="click" className={style.btn}>

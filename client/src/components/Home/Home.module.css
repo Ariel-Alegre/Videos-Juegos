@@ -42,7 +42,7 @@
   cursor: pointer;
   font-size: 1.2rem;
   box-shadow: 0 0 4px rgb(0, 195, 255);
-  margin-top: 10px;
+  margin-top: 3px;
   margin-right: 55px;
 }
 
@@ -52,11 +52,6 @@
 
 .boxContainer {
   margin-top: -2rem;
-
-}
-
-.MyInfoContainer {
-  display: -ms-grid;
 
 }
 
@@ -88,6 +83,12 @@
   margin-top: 20px;
 }
 
+.navBar {
+  background-color: rgb(52, 52, 52);
+  box-shadow: 0px 0px 10px black;
+  height: 60px;
+  background-size: cover;
+}
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
@@ -118,7 +119,7 @@
 
   .btnExit {
     margin-left: -20rem;
-    margin-top: -2px;
+    margin-top: -5px;
   }
   .search {
     margin-top: 80px;
@@ -141,9 +142,4 @@
     justify-content: center;
     margin-top: 40px;
   }
-}
-.navBar {
-  background-color: rgb(52, 52, 52);
-  box-shadow: 0px 0px 10px black;
-  height: 60px;
 }
