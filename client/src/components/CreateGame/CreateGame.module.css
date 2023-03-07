@@ -278,48 +278,47 @@
 }
 
 @media screen and (max-width: 768px) {
- 
   .formContainer {
-   width: 360px;
-   margin-top: 20px;
-   height: 800px;
+    width: 360px;
+    margin-top: 20px;
+    height: 800px;
   }
-  .title{
-   position: absolute;
-   margin-top: 10px;
-   width: 200px;
-   font-size: 22px;
+  .title {
+    position: absolute;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 22px;
   }
-  .nameContainer{
+  .nameContainer {
     margin-top: 50px;
     margin-left: -300px;
   }
-  .imageContainer{
+  .imageContainer {
     margin-left: -300px;
   }
-  .releasedContainer{
+  .releasedContainer {
     margin-left: -300px;
   }
-  .ratingContainer{
+  .ratingContainer {
     margin-left: -300px;
   }
-  .genresContainer{
-    margin-left: -300px;
-  }
-  
-  .platformsContainer{
-    margin-left: -300px;
-  }
-  .descriptionContainer{
+  .genresContainer {
     margin-left: -300px;
   }
 
-  .buttonCreate{
+  .platformsContainer {
+    margin-left: -300px;
+  }
+  .descriptionContainer {
+    margin-left: -300px;
+  }
+
+  .buttonCreate {
     position: absolute;
     margin-top: 720px;
     margin-left: -15px;
   }
-  .buttonCancel{
+  .buttonCancel {
     position: absolute;
     margin-top: 720px;
     margin-left: 150px;
@@ -328,4 +327,3 @@
     margin-left: -450px;
   }
 }
-

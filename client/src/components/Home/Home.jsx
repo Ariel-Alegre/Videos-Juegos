@@ -52,46 +52,46 @@ function Home() {
           <MdExitToApp />
         </button>
       </Link>
-      <div className={style.search}>
-        <Search />
+      <div className={style.navBar}>
+        <div className={style.search}>
+          <Search />
+        </div>
       </div>
-      <div className={style.boxContainer}>
-        <Link className={style.btnCreate} to="/creategame">
-          <button type="click" className={style.btn}>
-            Create Game!
-          </button>
-        </Link>
-
-        <div className={style.orderSelect}>
-          <FilterByGenres setCurrentPage={setCurrentPage} />
-          <SortBy setCurrentPage={setCurrentPage} />
-          <FilterOrder />
+        <div className={style.boxContainer}>
+          <Link className={style.btnCreate} to="/creategame">
+            <button type="click" className={style.btn}>
+              Create Game!
+            </button>
+          </Link>
+          <div className={style.orderSelect}>
+            <FilterByGenres setCurrentPage={setCurrentPage} />
+            <SortBy setCurrentPage={setCurrentPage} />
+            <FilterOrder />
+          </div>
         </div>
-
-        <ul className={style.orderList}>
-          {currentGames === 0 && !show ? (
-            <div></div>
-          ) : currentGames.length > 0 ? (
-            currentGames &&
-            currentGames?.map((games) => (
-              <GameCard key={games.id} games={games} />
-            ))
-          ) : (
-            <h1 className={style.orderLoading}>
-              <AiOutlineLoading3Quarters
-                setLoading={setLoading}
-                className={style.loading}
-              />
-            </h1>
-          )}
-        </ul>
-        <div className={style.pagination}>
-          <Pagination
-            gamesPerpage={gamesPerpage}
-            allGames={allGames.length}
-            paginado={paginado}
-          />
-        </div>
+      <ul className={style.orderList}>
+        {currentGames === 0 && !show ? (
+          <div></div>
+        ) : currentGames.length > 0 ? (
+          currentGames &&
+          currentGames?.map((games) => (
+            <GameCard key={games.id} games={games} />
+          ))
+        ) : (
+          <h1 className={style.orderLoading}>
+            <AiOutlineLoading3Quarters
+              setLoading={setLoading}
+              className={style.loading}
+            />
+          </h1>
+        )}
+      </ul>
+      <div className={style.pagination}>
+        <Pagination
+          gamesPerpage={gamesPerpage}
+          allGames={allGames.length}
+          paginado={paginado}
+        />
       </div>
     </div>
   );

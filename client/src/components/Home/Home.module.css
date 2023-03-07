@@ -52,12 +52,12 @@
 
 .boxContainer {
   margin-top: -2rem;
-  background: rgb(41, 41, 41);
+
 }
 
 .MyInfoContainer {
   display: -ms-grid;
-  background-color: black;
+
 }
 
 .btn:hover {
@@ -89,8 +89,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-
   .container {
     display: flex;
     flex-direction: column;
@@ -143,4 +141,9 @@
     justify-content: center;
     margin-top: 40px;
   }
+}
+.navBar {
+  background-color: rgb(52, 52, 52);
+  box-shadow: 0px 0px 10px black;
+  height: 60px;
 }
