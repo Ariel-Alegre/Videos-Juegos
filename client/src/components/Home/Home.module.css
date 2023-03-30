@@ -87,13 +87,13 @@
   background-color: rgb(52, 52, 52);
   box-shadow: 0px 0px 10px black;
   height: 60px;
-  background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
   }
+
 
   .container .containerBtn {
     display: flex;
@@ -111,26 +111,12 @@
 
   .container .boxContainer .orderSelect {
     margin-left: 1rem;
-    margin-top: 100px;
+    margin-top: 50px;
     height: auto;
     display: flex;
     gap: 15px;
   }
 
-  .btnExit {
-    margin-left: -20rem;
-    margin-top: -5px;
-  }
-  .search {
-    margin-top: 80px;
-    position: absolute;
-  }
-  .btn {
-    margin-left: 15px;
-    margin-top: -10px;
-    height: 25px;
-    width: auto;
-  }
 
   .orderList {
     margin-top: 50px;
@@ -141,5 +127,12 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+  }
+  .search {
+    margin-left: -650px;
+    margin-top: -8px;
+  }
+  .btn {
+    margin-top: 20px;
   }
 }

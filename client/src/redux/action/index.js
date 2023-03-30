@@ -17,7 +17,7 @@ export const CLEAN = 'CLEAN';
 
 export const allVideosgame = () => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames`);
+        const res = await axios.get(`https://videos-juegos-production.up.railway.app/videogames`);
         const data = await res.data;
         return dispatch({
             type: ALL_VIDEOS_GAME,
@@ -29,7 +29,7 @@ export const allVideosgame = () => {
 
 export const allGenres = () => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/genres`);
+        const res = await axios.get(`https://videos-juegos-production.up.railway.app/genres`);
         const data = await res.data;
         return dispatch({
             type: ALL_GENRES,
@@ -41,7 +41,7 @@ export const allGenres = () => {
 
 export const gameDetails = (id) => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogame/${id}`);
+        const res = await axios.get(`https://videos-juegos-production.up.railway.app/videogame/${id}`);
         const data = await res.data;
 
         return dispatch({
@@ -56,7 +56,7 @@ export const createVideogame = (videogame) => {
     return async (dispatch) => {
         try {
             const { data } = await axios.post(
-                `${REACT_APP_SERVER_BACK}/videogame`,
+                `https://videos-juegos-production.up.railway.app/videogame`,
                 videogame
             );
             return dispatch({
@@ -71,7 +71,7 @@ export const createVideogame = (videogame) => {
 
 export const getName = (name) => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/videogames?name=${name}`);
+        const res = await axios.get(`https://videos-juegos-production.up.railway.app/videogames?name=${name}`);
         const data = await res.data
 
         return dispatch({
@@ -106,7 +106,7 @@ export const filterOrder = (payload) => {
 
 export const getPlatforms = () => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/platforms`);
+        const res = await axios.get(`https://videos-juegos-production.up.railway.app/platforms`);
         const data = await res.data
         return dispatch({
             type: GET_PLATFORMS,
