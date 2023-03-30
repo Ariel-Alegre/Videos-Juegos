@@ -22,7 +22,7 @@ function Home() {
   }, [dispatch]);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const gamesPerpage = 6;
+  const gamesPerpage = 8;
   const indexOflastGame = currentPage * gamesPerpage;
   const indexOfirstGame = indexOflastGame - gamesPerpage;
   const currentGames = allGames.slice(indexOfirstGame, indexOflastGame);
